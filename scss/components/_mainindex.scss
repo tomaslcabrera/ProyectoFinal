@@ -9,13 +9,13 @@
         min-height: 100vh;
         display: grid;
         grid-template-columns: 100%;
-        grid-row: repeat(3,15em);
+        grid-row: repeat(3,20em);
         grid-template-areas: 
         "section-img-1"
         "section-img-2"
         "section-img-3";
         @include media-up(sm){
-            grid-template-rows: repeat(3, 20em);
+            grid-template-rows: repeat(3, 22.5em);
         }
         @include media-up(md){
             grid-template-rows: repeat(3, 25em);
@@ -41,10 +41,10 @@
         .section-img-1,.section-img-2,.section-img-3{
             @extend %dflex;
             .img-section-index{
-                height: 15em;
+                height: 20em;
                 width: 100%;
                 @include media-up(sm){
-                    height: 20em;
+                    height: 22.5em;
                 }
                 @include media-up(md){
                     height: 25em;

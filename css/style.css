@@ -104,11 +104,11 @@ header nav {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-row: repeat(3, 15em);
+    grid-row: repeat(3, 20em);
     grid-template-areas: "section-img-1" "section-img-2" "section-img-3"; }
     @media screen and (min-width: 576px) {
       .main-index .main-section-index {
-        grid-template-rows: repeat(3, 20em); } }
+        grid-template-rows: repeat(3, 22.5em); } }
     @media screen and (min-width: 768px) {
       .main-index .main-section-index {
         grid-template-rows: repeat(3, 25em); } }
@@ -128,11 +128,11 @@ header nav {
     .main-index .main-section-index .section-img-3 {
       grid-area: section-img-3; }
     .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
-      height: 15em;
+      height: 20em;
       width: 100%; }
       @media screen and (min-width: 576px) {
         .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
-          height: 20em; } }
+          height: 22.5em; } }
       @media screen and (min-width: 768px) {
         .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
           height: 25em; } }
