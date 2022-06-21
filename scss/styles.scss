@@ -1,0 +1,37 @@
+@import 'components/header';
+@import 'components/footer';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: nth($list: $colores, $n:6 );
+}
+::-webkit-scrollbar{
+    width: 0.7em;
+  }
+  
+::-webkit-scrollbar-track{
+    background: nth($colores, 2);
+}
+  
+::-webkit-scrollbar-thumb{
+    background: nth($colores, 3);
+}
+  
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+/*INDEX*/
+@import 'components/mainindex';
+/*MENU*/
+@import 'components/mainmenu';
+/*SUCURSALES*/
+@import 'components/mainsucursales';
+/*NOSOTROS*/
+@import 'components/mainnosotros';
+/*GIFTCARDS*/
+@import 'components/maingiftcards';

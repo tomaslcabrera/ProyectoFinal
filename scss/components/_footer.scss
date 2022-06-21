@@ -1,0 +1,56 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.footer{
+    background: nth($list: $colores, $n:2 );
+    padding-top: 2em;
+    .footer-content{
+        height: 8em;
+        @extend %dflex;
+        flex-direction: column;
+        a{
+            .footer-logo{
+                height: 2.5em;
+                width: 2.5em;
+                margin-left: 1em;
+            }
+        }
+        p{
+            // max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 1em;
+        }
+        .socials{
+            list-style: none;
+            @extend %dflex;
+            margin: 1rem 0 3rem 0;
+            li{
+                margin: 0 10px;
+            }
+            a{
+                text-decoration: none;
+                color: nth($list: $colores, $n:3 );
+                &:hover{
+                    color: nth($list: $colores, $n:1 );
+                }
+                i{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        height: 3.5em;
+        text-align: center;
+        background: rgb(14, 13, 13);
+        color: nth($list: $colores, $n:5 );
+        padding: 20px 0;
+        p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+    }
+}

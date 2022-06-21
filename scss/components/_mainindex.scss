@@ -1,0 +1,92 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.main-index{
+    min-height: 100vh;
+    grid-area: main-index;
+    .main-section-index{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row: repeat(3,15em);
+        grid-template-areas: 
+        "section-img-1"
+        "section-img-2"
+        "section-img-3";
+        @include media-up(sm){
+            grid-template-rows: repeat(3, 20em);
+        }
+        @include media-up(md){
+            grid-template-rows: repeat(3, 25em);
+        }
+        @include media-up(lg){
+            grid-template-rows: repeat(3, 30em);
+        }
+        @include media-up(xl){
+            grid-template-rows: repeat(3, 35em);
+        }
+        @include media-up(xxl){
+            grid-template-rows: repeat(3, 42em);
+        }
+        .section-img-1{
+            grid-area: section-img-1;
+        }
+        .section-img-2{
+            grid-area: section-img-2;
+        }
+        .section-img-3{
+            grid-area: section-img-3;
+        }
+        .section-img-1,.section-img-2,.section-img-3{
+            @extend %dflex;
+            .img-section-index{
+                height: 15em;
+                width: 100%;
+                @include media-up(sm){
+                    height: 20em;
+                }
+                @include media-up(md){
+                    height: 25em;
+                }
+                @include media-up(lg){
+                    height: 30em;
+                }
+                @include media-up(xl){
+                    height: 35em;
+                }
+                @include media-up(xxl){
+                    height: 42em;
+                }
+            }
+            a{
+                text-decoration: none;
+                position: absolute;
+                text-align: center;
+                color: nth($list: $colores, $n:6 );
+                font-weight: 900;
+                width: 90%;
+                line-height: 2em;
+                @include media-up(sm){
+                    font-size: large;
+                    line-height: 3em;
+                }
+                @include media-up(md){
+                    font-size: x-large;
+                }
+                @include media-up(lg){
+                    font-size: 2.25em;
+                    word-spacing: 0.5em;
+                }
+                @include media-up(xxl){
+                    font-size: 3em;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 1s;
+                    color: nth($list: $colores, $n:1 );
+                }
+            }
+        }
+    }
+}

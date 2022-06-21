@@ -1,0 +1,48 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.main-giftcards{
+    min-height: 100vh;
+    h1{
+        height: 4em;
+        @extend %dflex;
+        background-color: nth($list: $colores, $n:2 );
+        color: nth($list: $colores, $n:3 );
+    }
+   .contenedor-giftcards{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+        @include media-up(md){
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include media-up(xl){
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3,1fr);
+        }
+        .card-body{
+            .btn{
+                width: 7em;
+                border-radius: 2em;
+                color: nth($list: $colores, $n: 2);
+                font-weight: 700;
+                background-color: nth($list: $colores, $n: 1);
+                border: 0.1em solid nth($list: $colores, $n: 2);
+                &:hover{
+                    background-color: nth($list: $colores, $n: 3);
+                    transform: scale(1.2);
+                    transition: all 1s;
+                }
+            }
+            .card-text{
+                span{
+                    font-style: italic;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

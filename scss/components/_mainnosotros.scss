@@ -1,0 +1,95 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.main-nosotros{
+    min-height: 100vh;
+    background-color: nth($list: $colores, $n:6);
+    h1{
+        height: 4em;
+        @extend %dflex;
+        background-color: nth($list: $colores, $n:2 );
+        color: nth($list: $colores, $n:3 );  
+    }
+    .grid-nosotros{
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: 1fr 12em 1fr 12em 1fr;
+        text-align: center;
+        gap: 1em;
+        @include media-up(xl){
+            grid-template-rows: 1fr 15em 1fr 15em 1fr;
+        }
+        .grid-item-text{
+            height: 12em;
+            background-color: nth($list: $colores, $n:3 );
+            @extend %dflex;
+            @include media-up(xl){
+                height: 15em;
+            }
+            h2{
+                @include media-up(md){
+                    font-size: xx-large;
+                }
+                @include media-up(lg){
+                    font-size: 2.3em;
+                }
+                @include media-up(xl){
+                    font-size: 2.5em;
+                }
+            }
+            p{
+                @include media-up(md){
+                    font-size: x-large;
+                }
+                @include media-up(lg){
+                    font-size: xx-large;
+                }
+                @include media-up(xl){
+                    font-size: 2.1em;
+                }
+            }
+        }
+        .grid-item{
+            height: 1fr;
+            @extend %dflex;
+            flex-direction: column;
+            background-color: nth($list: $colores, $n:3 );
+            margin: 1em 0;
+            @include media-up(md){
+            flex-direction: row;
+            }
+            div{
+                h2{
+                    @include media-up(md){
+                        font-size: xx-large;
+                    }
+                    @include media-up(lg){
+                        font-size: 2.3em;
+                    }
+                    @include media-up(xl){
+                        font-size: 2.5em;
+                    }
+                }
+                p{
+                    @include media-up(md){
+                        font-size: x-large;
+                    }
+                    @include media-up(lg){
+                        font-size: xx-large;
+                    }
+                    @include media-up(xl){
+                        font-size: 2.1em;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                @include media-up(md){
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

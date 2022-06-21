@@ -1,0 +1,43 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+/*HEADER*/
+header{
+    nav{
+        background-color: nth($colores,3);
+        div{
+            a{
+                .logo-header-a{
+                    fill: nth($colores,2);
+                    &:hover{
+                        transition: all 1s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        div{
+            ul{
+                a{
+                    .logo-header-b{
+                        fill: nth($colores,2);
+                        &:hover{
+                            transition: all 1s;
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+                .nav-item{
+                    .nav-link{
+                        color: nth($colores,2);
+                        font-weight: 600;
+                        &:hover{
+                            color: nth($colores,1);
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

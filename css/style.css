@@ -1,0 +1,391 @@
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*HEADER*/
+header nav {
+  background-color: gold; }
+  header nav div a .logo-header-a {
+    fill: black; }
+    header nav div a .logo-header-a:hover {
+      transition: all 1s;
+      transform: rotate(360deg); }
+  header nav div ul a .logo-header-b {
+    fill: black; }
+    header nav div ul a .logo-header-b:hover {
+      transition: all 1s;
+      transform: rotate(360deg); }
+  header nav div ul .nav-item .nav-link {
+    color: black;
+    font-weight: 600; }
+    header nav div ul .nav-item .nav-link:hover {
+      color: red;
+      transform: scale(1.3); }
+
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer {
+  background: black;
+  padding-top: 2em; }
+  .footer .footer-content {
+    height: 8em;
+    flex-direction: column; }
+    .footer .footer-content a .footer-logo {
+      height: 2.5em;
+      width: 2.5em;
+      margin-left: 1em; }
+    .footer .footer-content p {
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 1em; }
+    .footer .footer-content .socials {
+      list-style: none;
+      margin: 1rem 0 3rem 0; }
+      .footer .footer-content .socials li {
+        margin: 0 10px; }
+      .footer .footer-content .socials a {
+        text-decoration: none;
+        color: gold; }
+        .footer .footer-content .socials a:hover {
+          color: red; }
+        .footer .footer-content .socials a i {
+          font-size: 1.1rem; }
+  .footer .footer-bottom {
+    height: 3.5em;
+    text-align: center;
+    background: #0e0d0d;
+    color: white;
+    padding: 20px 0; }
+    .footer .footer-bottom p {
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ff4800; }
+
+::-webkit-scrollbar {
+  width: 0.7em; }
+
+::-webkit-scrollbar-track {
+  background: black; }
+
+::-webkit-scrollbar-thumb {
+  background: gold; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
+/*INDEX*/
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-index {
+  min-height: 100vh;
+  grid-area: main-index; }
+  .main-index .main-section-index {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row: repeat(3, 15em);
+    grid-template-areas: "section-img-1" "section-img-2" "section-img-3"; }
+    @media screen and (min-width: 576px) {
+      .main-index .main-section-index {
+        grid-template-rows: repeat(3, 20em); } }
+    @media screen and (min-width: 768px) {
+      .main-index .main-section-index {
+        grid-template-rows: repeat(3, 25em); } }
+    @media screen and (min-width: 992px) {
+      .main-index .main-section-index {
+        grid-template-rows: repeat(3, 30em); } }
+    @media screen and (min-width: 1200px) {
+      .main-index .main-section-index {
+        grid-template-rows: repeat(3, 35em); } }
+    @media screen and (min-width: 1400px) {
+      .main-index .main-section-index {
+        grid-template-rows: repeat(3, 42em); } }
+    .main-index .main-section-index .section-img-1 {
+      grid-area: section-img-1; }
+    .main-index .main-section-index .section-img-2 {
+      grid-area: section-img-2; }
+    .main-index .main-section-index .section-img-3 {
+      grid-area: section-img-3; }
+    .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+      height: 15em;
+      width: 100%; }
+      @media screen and (min-width: 576px) {
+        .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+          height: 20em; } }
+      @media screen and (min-width: 768px) {
+        .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+          height: 25em; } }
+      @media screen and (min-width: 992px) {
+        .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+          height: 30em; } }
+      @media screen and (min-width: 1200px) {
+        .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+          height: 35em; } }
+      @media screen and (min-width: 1400px) {
+        .main-index .main-section-index .section-img-1 .img-section-index, .main-index .main-section-index .section-img-2 .img-section-index, .main-index .main-section-index .section-img-3 .img-section-index {
+          height: 42em; } }
+    .main-index .main-section-index .section-img-1 a, .main-index .main-section-index .section-img-2 a, .main-index .main-section-index .section-img-3 a {
+      text-decoration: none;
+      position: absolute;
+      text-align: center;
+      color: #ff4800;
+      font-weight: 900;
+      width: 90%;
+      line-height: 2em; }
+      @media screen and (min-width: 576px) {
+        .main-index .main-section-index .section-img-1 a, .main-index .main-section-index .section-img-2 a, .main-index .main-section-index .section-img-3 a {
+          font-size: large;
+          line-height: 3em; } }
+      @media screen and (min-width: 768px) {
+        .main-index .main-section-index .section-img-1 a, .main-index .main-section-index .section-img-2 a, .main-index .main-section-index .section-img-3 a {
+          font-size: x-large; } }
+      @media screen and (min-width: 992px) {
+        .main-index .main-section-index .section-img-1 a, .main-index .main-section-index .section-img-2 a, .main-index .main-section-index .section-img-3 a {
+          font-size: 2.25em;
+          word-spacing: 0.5em; } }
+      @media screen and (min-width: 1400px) {
+        .main-index .main-section-index .section-img-1 a, .main-index .main-section-index .section-img-2 a, .main-index .main-section-index .section-img-3 a {
+          font-size: 3em; } }
+      .main-index .main-section-index .section-img-1 a:hover, .main-index .main-section-index .section-img-2 a:hover, .main-index .main-section-index .section-img-3 a:hover {
+        transform: scale(1.1);
+        transition: all 1s;
+        color: red; }
+
+/*MENU*/
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-menu {
+  background-color: #ff4800; }
+  .main-menu h1 {
+    height: 4em;
+    background-color: black;
+    color: gold; }
+  .main-menu .menu-grid-container {
+    min-height: 80vh;
+    margin: 2em auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 1fr); }
+    @media screen and (min-width: 576px) {
+      .main-menu .menu-grid-container {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (min-width: 992px) {
+      .main-menu .menu-grid-container {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); } }
+    .main-menu .menu-grid-container .grid-item {
+      text-align: center;
+      margin: 0em 1em 1em 1em; }
+      .main-menu .menu-grid-container .grid-item .info-contenedor h5 {
+        font-style: italic;
+        text-transform: capitalize;
+        color: black; }
+      .main-menu .menu-grid-container .grid-item .info-contenedor p {
+        color: black; }
+      .main-menu .menu-grid-container .grid-item .info-contenedor div .btn-agregar {
+        border-radius: 1em;
+        width: 6em;
+        height: 2em;
+        background-color: red;
+        font: normal 700 large sans-serif;
+        border: 0.1em solid black; }
+        .main-menu .menu-grid-container .grid-item .info-contenedor div .btn-agregar:hover {
+          transition: all 1s;
+          background-color: gold;
+          transform: scale(1.2); }
+      .main-menu .menu-grid-container .grid-item .grid-item-img {
+        width: 6em;
+        height: 6em;
+        border-radius: 6em;
+        margin-right: 1em; }
+        .main-menu .menu-grid-container .grid-item .grid-item-img:hover {
+          transform: rotate(360deg) scale(1.1);
+          transition: all 1s; }
+
+/*SUCURSALES*/
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-sucursales {
+  background: rgba(0, 0, 0, 0.2) url(../../imagenes/bandera-argentina-encima-de-la-hamburguesa-aislada-en-negro-96932091.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  min-height: 100vh; }
+  .main-sucursales h1 {
+    height: 4em;
+    background-color: black;
+    color: gold; }
+  .main-sucursales .contenedor-mapas {
+    flex-direction: column; }
+    .main-sucursales .contenedor-mapas div {
+      margin: 1em auto; }
+      .main-sucursales .contenedor-mapas div .title-maps {
+        text-align: center;
+        color: red; }
+      .main-sucursales .contenedor-mapas div .maps {
+        width: 18em;
+        height: 15em;
+        border-radius: 1em;
+        border: 0.2em solid red; }
+        @media screen and (min-width: 576px) {
+          .main-sucursales .contenedor-mapas div .maps {
+            width: 30em;
+            height: 15em; } }
+        @media screen and (min-width: 768px) {
+          .main-sucursales .contenedor-mapas div .maps {
+            width: 40em;
+            height: 18em; } }
+        @media screen and (min-width: 992px) {
+          .main-sucursales .contenedor-mapas div .maps {
+            width: 45em;
+            height: 20em; } }
+        @media screen and (min-width: 1200px) {
+          .main-sucursales .contenedor-mapas div .maps {
+            width: 55em;
+            height: 25em; } }
+        @media screen and (min-width: 1400px) {
+          .main-sucursales .contenedor-mapas div .maps {
+            width: 70em;
+            height: 30em; } }
+
+/*NOSOTROS*/
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-nosotros {
+  min-height: 100vh;
+  background-color: #ff4800; }
+  .main-nosotros h1 {
+    height: 4em;
+    background-color: black;
+    color: gold; }
+  .main-nosotros .grid-nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 12em 1fr 12em 1fr;
+    text-align: center;
+    gap: 1em; }
+    @media screen and (min-width: 1200px) {
+      .main-nosotros .grid-nosotros {
+        grid-template-rows: 1fr 15em 1fr 15em 1fr; } }
+    .main-nosotros .grid-nosotros .grid-item-text {
+      height: 12em;
+      background-color: gold; }
+      @media screen and (min-width: 1200px) {
+        .main-nosotros .grid-nosotros .grid-item-text {
+          height: 15em; } }
+      @media screen and (min-width: 768px) {
+        .main-nosotros .grid-nosotros .grid-item-text h2 {
+          font-size: xx-large; } }
+      @media screen and (min-width: 992px) {
+        .main-nosotros .grid-nosotros .grid-item-text h2 {
+          font-size: 2.3em; } }
+      @media screen and (min-width: 1200px) {
+        .main-nosotros .grid-nosotros .grid-item-text h2 {
+          font-size: 2.5em; } }
+      @media screen and (min-width: 768px) {
+        .main-nosotros .grid-nosotros .grid-item-text p {
+          font-size: x-large; } }
+      @media screen and (min-width: 992px) {
+        .main-nosotros .grid-nosotros .grid-item-text p {
+          font-size: xx-large; } }
+      @media screen and (min-width: 1200px) {
+        .main-nosotros .grid-nosotros .grid-item-text p {
+          font-size: 2.1em; } }
+    .main-nosotros .grid-nosotros .grid-item {
+      height: 1fr;
+      flex-direction: column;
+      background-color: gold;
+      margin: 1em 0; }
+      @media screen and (min-width: 768px) {
+        .main-nosotros .grid-nosotros .grid-item {
+          flex-direction: row; } }
+      @media screen and (min-width: 768px) {
+        .main-nosotros .grid-nosotros .grid-item div h2 {
+          font-size: xx-large; } }
+      @media screen and (min-width: 992px) {
+        .main-nosotros .grid-nosotros .grid-item div h2 {
+          font-size: 2.3em; } }
+      @media screen and (min-width: 1200px) {
+        .main-nosotros .grid-nosotros .grid-item div h2 {
+          font-size: 2.5em; } }
+      @media screen and (min-width: 768px) {
+        .main-nosotros .grid-nosotros .grid-item div p {
+          font-size: x-large; } }
+      @media screen and (min-width: 992px) {
+        .main-nosotros .grid-nosotros .grid-item div p {
+          font-size: xx-large; } }
+      @media screen and (min-width: 1200px) {
+        .main-nosotros .grid-nosotros .grid-item div p {
+          font-size: 2.1em; } }
+      .main-nosotros .grid-nosotros .grid-item img {
+        width: 100%;
+        height: 100%; }
+        @media screen and (min-width: 768px) {
+          .main-nosotros .grid-nosotros .grid-item img {
+            width: 50%; } }
+
+/*GIFTCARDS*/
+.footer .footer-content, .footer .footer-content .socials, .main-index .main-section-index .section-img-1, .main-index .main-section-index .section-img-2, .main-index .main-section-index .section-img-3, .main-menu h1, .main-menu .menu-grid-container .grid-item, .main-sucursales h1, .main-sucursales .contenedor-mapas, .main-nosotros h1, .main-nosotros .grid-nosotros .grid-item-text, .main-nosotros .grid-nosotros .grid-item, .main-giftcards h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main-giftcards {
+  min-height: 100vh; }
+  .main-giftcards h1 {
+    height: 4em;
+    background-color: black;
+    color: gold; }
+  .main-giftcards .contenedor-giftcards {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr); }
+    @media screen and (min-width: 768px) {
+      .main-giftcards .contenedor-giftcards {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (min-width: 1200px) {
+      .main-giftcards .contenedor-giftcards {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); } }
+    .main-giftcards .contenedor-giftcards .card-body .btn {
+      width: 7em;
+      border-radius: 2em;
+      color: black;
+      font-weight: 700;
+      background-color: red;
+      border: 0.1em solid black; }
+      .main-giftcards .contenedor-giftcards .card-body .btn:hover {
+        background-color: gold;
+        transform: scale(1.2);
+        transition: all 1s; }
+    .main-giftcards .contenedor-giftcards .card-body .card-text span {
+      font-style: italic;
+      font-weight: bold; }

@@ -1,0 +1,68 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.main-menu{
+    background-color: nth($list: $colores, $n:6 );
+    h1{
+        height: 4em;
+        @extend %dflex;
+        background-color: nth($list: $colores, $n:2 );
+        color: nth($list: $colores, $n:3 );
+    }
+    .menu-grid-container{
+        min-height: 80vh;
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9,1fr);
+        @include media-up(sm){
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(2,1fr);
+        }
+        @include media-up(lg){
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3,1fr);
+        }
+        .grid-item{
+            @extend %dflex;
+            text-align: center;
+            margin: 0em 1em 1em 1em;
+            .info-contenedor{
+                h5{
+                    font-style: italic;
+                    text-transform: capitalize;
+                    color: nth($list: $colores, $n:2 );
+                }
+                p{
+                    color: nth($list: $colores, $n:2 );;
+                }
+                div{
+                    .btn-agregar{
+                        border-radius: 1em;
+                        width: 6em;
+                        height: 2em;
+                        background-color: nth($list: $colores, $n:1 );
+                        @include varios(large,700,normal,sans-serif);
+                        border: 0.1em solid nth($list: $colores, $n: 2);
+                        &:hover{
+                           transition: all 1s;
+                           background-color: nth($list: $colores, $n:3 );
+                           transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            .grid-item-img{
+                width: 6em;
+                height: 6em;
+                border-radius: 6em;
+                margin-right: 1em;
+                &:hover{
+                    transform: rotate(360deg) scale(1.1);
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+}

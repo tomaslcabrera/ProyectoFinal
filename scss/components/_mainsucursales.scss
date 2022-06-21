@@ -1,0 +1,55 @@
+@import '../base/extends';
+@import '../base/mixins';
+@import '../base/listas';
+
+.main-sucursales{
+    background: rgba(0,0,0,0.2) url(../../imagenes/bandera-argentina-encima-de-la-hamburguesa-aislada-en-negro-96932091.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    min-height: 100vh;
+    h1{
+        height: 4em;
+        @extend %dflex;
+        background-color: nth($list: $colores, $n:2 );
+        color: nth($list: $colores, $n:3 );
+    }
+    .contenedor-mapas{
+        @extend %dflex;
+        flex-direction: column;
+        div{
+            margin: 1em auto;
+            .title-maps{
+                text-align: center;
+                color: nth($list: $colores, $n:1 )
+            }
+            .maps{
+                width: 18em;
+                height: 15em;
+                border-radius: 1em;
+                border: 0.2em solid nth($list: $colores, $n:1 );
+                @include media-up(sm){
+                    width: 30em;
+                    height: 15em;
+                }
+                @include media-up(md){
+                    width: 40em;
+                    height: 18em;
+                }
+                @include media-up(lg){
+                    width: 45em;
+                    height: 20em;
+                }
+                @include media-up(xl){
+                    width: 55em;
+                    height: 25em;
+                }
+                @include media-up(xxl){
+                    width: 70em;
+                    height: 30em;
+                }
+            }
+        }
+    }
+}
