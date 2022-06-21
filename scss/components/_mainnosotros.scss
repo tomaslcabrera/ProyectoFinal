@@ -28,6 +28,7 @@
                 height: 15em;
             }
             h2{
+                color: nth($list: $colores, $n:2 );
                 @include media-up(md){
                     font-size: xx-large;
                 }
@@ -39,6 +40,7 @@
                 }
             }
             p{
+                color: nth($list: $colores, $n:2 );
                 @include media-up(md){
                     font-size: x-large;
                 }
@@ -61,6 +63,7 @@
             }
             div{
                 h2{
+                    color: nth($list: $colores, $n:2 );
                     @include media-up(md){
                         font-size: xx-large;
                     }
@@ -72,6 +75,7 @@
                     }
                 }
                 p{
+                    color: nth($list: $colores, $n:2 );
                     @include media-up(md){
                         font-size: x-large;
                     }
