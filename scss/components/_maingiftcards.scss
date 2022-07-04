@@ -4,6 +4,8 @@
 
 .main-giftcards{
     min-height: 100vh;
+    background: nth($list: $colores, $n:6 );
+    background: linear-gradient(90deg, rgb(105, 40, 18) 0%, nth($list: $colores, $n:6 ) 34%, rgba(208,23,23,1) 100%, rgba(121,65,9,1) 100%, rgba(255,0,0,1) 100%);
     h1{
         height: 4em;
         @extend %dflex;

@@ -64,6 +64,9 @@ header nav {
       height: 2.5em;
       width: 2.5em;
       margin-left: 1em; }
+      .footer .footer-content a .footer-logo:hover {
+        transform: scale(1.2);
+        transition: all 1.5s; }
     .footer .footer-content p {
       margin: 10px auto;
       line-height: 28px;
@@ -179,14 +182,14 @@ header nav {
   justify-content: center; }
 
 .main-menu {
-  background-color: #ff4800; }
+  background: #ff4800;
+  background: linear-gradient(90deg, #692812 0%, #ff4800 34%, #d01717 100%, #794109 100%, red 100%); }
   .main-menu h1 {
     height: 4em;
     background-color: black;
     color: gold; }
   .main-menu .menu-grid-container {
     min-height: 80vh;
-    margin: 2em auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 1fr); }
@@ -371,7 +374,9 @@ header nav {
   justify-content: center; }
 
 .main-giftcards {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #ff4800;
+  background: linear-gradient(90deg, #692812 0%, #ff4800 34%, #d01717 100%, #794109 100%, red 100%); }
   .main-giftcards h1 {
     height: 4em;
     background-color: black;
