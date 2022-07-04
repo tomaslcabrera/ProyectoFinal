@@ -38,8 +38,9 @@
                     color: nth($list: $colores, $n:2 );;
                 }
                 div{
-                    .btn-agregar{
+                    .btn{
                         border-radius: 1em;
+                        color: nth($list: $colores, $n: 2);
                         width: 6em;
                         height: 2em;
                         background-color: nth($list: $colores, $n:1 );

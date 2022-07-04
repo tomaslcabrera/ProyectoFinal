@@ -210,14 +210,15 @@ header nav {
         color: black; }
       .main-menu .menu-grid-container .grid-item .info-contenedor p {
         color: black; }
-      .main-menu .menu-grid-container .grid-item .info-contenedor div .btn-agregar {
+      .main-menu .menu-grid-container .grid-item .info-contenedor div .btn {
         border-radius: 1em;
+        color: black;
         width: 6em;
         height: 2em;
         background-color: red;
         font: normal 700 large sans-serif;
         border: 0.1em solid black; }
-        .main-menu .menu-grid-container .grid-item .info-contenedor div .btn-agregar:hover {
+        .main-menu .menu-grid-container .grid-item .info-contenedor div .btn:hover {
           transition: all 1s;
           background-color: gold;
           transform: scale(1.2); }
